@@ -18,7 +18,7 @@
 - 🤝 I’m looking for help in this project if you interesting you can fork it and start to contribute
 
 - 👨‍💻 My personal website [havnix.000.pe](havnix.000.pe)
-https://discord.gg/tCQ5hqUCSm
+
 - 📝 My discord server [https://discord.gg/tCQ5hqUCSm](https://discord.gg/tCQ5hqUCSm)
 
 - 💬 Ask me about **Web Development | Games Development | UI/UX**
