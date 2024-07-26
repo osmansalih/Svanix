@@ -39,5 +39,5 @@
 
 <div style="display: flex; flex-direction: row;">
 <img style="width: 49%; height: 170px;" src="https://github-readme-stats.vercel.app/api?username=osmansalih&show_icons=true&locale=en" alt="osmansalih" />
-<img style="width: 49%; height: 175px;" src="https://github-readme-streak-stats.herokuapp.com/?user=osmansalih&" alt="osmansalih" />
+<img style="width: 49%; height: 180px;" src="https://github-readme-streak-stats.herokuapp.com/?user=osmansalih&" alt="osmansalih" />
 </div>
