@@ -27,7 +27,7 @@ if($theme == 'dark'){
       </div>
     </div>
     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-      <img src="assets/images/main/social.png" style="width: 70%; margin-left: 150px;">
+      <img src="assets/images/main/social.png" style="width: 70%; margin-left: 150px; margin-top: -60px;">
         </div>
       </div>
   </div>
