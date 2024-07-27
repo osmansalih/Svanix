@@ -1,4 +1,4 @@
-<div class="container">
+<div class="nav-container container">
     <ul class="brand">
         <li><img src="assets/images/main/svanix-white.png" class="brand-logo"/></li>
         <li><a href="#" class="brand-name"><?php echo strtoupper($website_name);?></a></li>

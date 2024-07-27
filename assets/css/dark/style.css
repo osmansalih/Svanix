@@ -6,18 +6,138 @@
   margin: 0;
   box-sizing: border-box;
 }
-body {
+
+html, body {
   font-family: sans-serif;
   background: linear-gradient(#152f49, #262b3a);
-  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth; /* Enable smooth scrolling */
 }
-footer {
-  position: absolute;
-  bottom: 5px;
+
+.container {
+  width: 100%;
+  padding: 0;
+}
+
+.highlight {
+  background: linear-gradient(#3b84c9, #453bc9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-full-width {
+  width: 100vw; /* Full viewport width */
+  position: relative;
   left: 50%;
-  transform: translate(-50%, -50%);
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.section-white {
+  background-color: #fff;
+}
+
+.section-gradient {
+  background: linear-gradient(#152f49, #262b3a);
+}
+
+.cta-input {
+  padding: 15px 20px;
+  width: 100%;
+  max-width: 550px;
+  background-color: #0e1f30;
+  border: 0;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.cta-input:focus {
+  border: 0;
+  outline: 0;
+}
+
+.cta-button {
+  width: 100%;
+  max-width: 200px;
+  margin-left: 10px;
+  border: 0;
+  height: 50px;
+  border-radius: 10px;
+  background: linear-gradient(#3b84c9, #453bc9);
+  color: #fff;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #fff;
+  color: transparent;
+  font-weight: 500;
+}
+
+.cta-button::before {
+  content: attr(data-text);
+  position: absolute;
+  background: linear-gradient(#3b84c9, #453bc9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cta-button:hover::before {
+  opacity: 1;
+}
+
+.cta-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.card, .testimonial-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3, .testimonial-card p {
+  color: #3b84c9;
+  margin-bottom: 10px;
+}
+
+.testimonial-card {
+  background-color: #0e1f30;
+  color: #fff;
+}
+
+footer {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .text {
@@ -25,79 +145,59 @@ footer {
   font-weight: bold;
 }
 
-.bold {
+.brand {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.brand-logo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.brand-name {
+  color: #fff;
+  text-decoration: none;
   font-weight: bold;
 }
 
-.container {
-  padding: 18px;
-  width: 100%;
-  height: 100px;
+.pages {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  left: 7%;
+}
+
+.pages li {
+  margin: 0 10px;
+}
+
+.pages a:hover {
+  color: #3b84c9;
+}
+
+.pages a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.actions {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+}
+
+.actions li {
+  margin: 0 10px;
+}
+
+.nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.0);
-}
-
-/* Nav Bar */
-
-.container ul {
-  display: flex;
-  align-items: center;
-}
-.container li {
-  list-style: none;
-  display: inline;
-}
-.container li a, .container li button {
-  text-decoration: none;
-  padding: 14px 20px;
-  font-size: 16px;
-  border-radius: 4px;
-  color: #f2f2f2;
-  display: inline-block;
-  text-align: center;
-  letter-spacing: 1px;
-  transition: all .3s ease-in;
-  font-family: "Play", sans-serif;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-.container li button:hover {
-  background-color: #3b84c9;
-  color: black;
-}
-.container li a:hover {
-  color: #3b84c9;
-}
-.brand {
-  justify-content: flex-start;
-  width: 33.3%;
-}
-.brand-name:hover {
-  color: #fff !important;
-}
-.brand-logo {
-  width: 40px;
-  height: 40px;
-  margin-right: 5px;
-}
-.pages {
-  justify-content: center;
-  width: 33.3%;
-}
-.actions {
-  justify-content: flex-end;
-  width: 33.3%;
-  height: 45px;
-  z-index: -1;
-}
-
-/* Index */
-
-.index-vector {
-  margin-top: 400px;
-  height: 300px;
-
+  padding: 20px 0;
 }
