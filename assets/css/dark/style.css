@@ -1,3 +1,4 @@
+/* Primary color: #3b84c9 */
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
 
 * {
@@ -24,6 +25,10 @@ footer {
   font-weight: bold;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .container {
   padding: 18px;
   width: 100%;
@@ -33,6 +38,9 @@ footer {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.0);
 }
+
+/* Nav Bar */
+
 .container ul {
   display: flex;
   align-items: center;
@@ -65,6 +73,7 @@ footer {
 }
 .brand {
   justify-content: flex-start;
+  width: 33.3%;
 }
 .brand-name:hover {
   color: #fff !important;
@@ -76,8 +85,19 @@ footer {
 }
 .pages {
   justify-content: center;
-  flex: 1;
+  width: 33.3%;
 }
 .actions {
   justify-content: flex-end;
+  width: 33.3%;
+  height: 45px;
+  z-index: -1;
+}
+
+/* Index */
+
+.index-vector {
+  margin-top: 400px;
+  height: 300px;
+
 }

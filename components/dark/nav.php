@@ -10,7 +10,6 @@
         <li><a href="#">CONTACT</a></li>
     </ul>
     <ul class="actions">
-        <li><button href="#">SIGN UP</button></li>
-        <li><button href="#">SIGN IN</button></li>
+        <li><i class="fa fa-circle-user text" style="font-size: 28px;"></i></li>
     </ul>
 </div>
