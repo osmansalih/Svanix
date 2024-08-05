@@ -1,4 +1,4 @@
-<b>Svanix</b> | Social Media Platform Website
+<b>Svanix</b> | Social Media Platform Website (Coming Soon)
 
 <img style="border-radius: 20px;" src="http://share.000.pe/banner.png"></img>
 
